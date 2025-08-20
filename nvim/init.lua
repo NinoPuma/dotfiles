@@ -42,8 +42,9 @@ vim.keymap.set('n', '<C-n>', ':Neotree filesystem reveal left<CR>', {})
 --
 local config = require("nvim-treesitter.configs")
 config.setup({
-  ensure_installed = {"lua", "java", "json", "python", "swift"},
-  hightlight = { enable = true },
+  ensure_installed = {"lua", "java", "json", "python"},
+  ignore_install = {"swift"},
+  highlight = { enable = true },
   indent = { enable = true }, -- :wa
 })
 
