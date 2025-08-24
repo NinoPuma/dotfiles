@@ -1,14 +1,12 @@
 configuration {
-  font: "JetBrainsMono Nerd Font 12";
-  show-icons: true;
-  icon-theme: "Papirus";
-  modi: "drun";
-  display-drun: "Apps";
-  disable-history: false;
-  drun-display-format: "{name}";
-  window-format: "{w} · {t}";
-  sidebar-mode: false;
-  kb-row-select: "Tab";
-  kb-accept-entry: "Return,KP_Enter";
+  modi: "drun,run,window";
+  show-icons: false;
 }
-@theme "themes/dark-rounded.rasi"
+@theme "~/.config/rofi/themes/squared.rasi"
+
+* {
+  font: "monospace 36";
+}
+window {
+  width: 35%;
+}
